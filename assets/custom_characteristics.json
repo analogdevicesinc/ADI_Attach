@@ -1,0 +1,7 @@
+[
+    { "name": "WDX Device Configuration Characteristic",  "identifier": "custom", "uuid": "0002", "source": "ADI" },
+    { "name": "WDX File Transfer Control Characteristic", "identifier": "custom", "uuid": "0003", "source": "ADI" },
+    { "name": "WDX File Transfer Data Characteristic",    "identifier": "custom", "uuid": "0004", "source": "ADI" },
+    { "name": "WDX Authentication Characteristic",        "identifier": "custom", "uuid": "0005", "source": "ADI" },
+    { "name": "ARM Propietary Data Characteristic",       "identifier": "custom", "uuid": "2760", "source": "ARM" }
+]

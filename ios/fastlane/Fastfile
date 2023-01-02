@@ -1,0 +1,69 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Push a new beta build to TestFlight"
+  lane :beta do
+    build_app(workspace: "Runner.xcworkspace", scheme: "Runner")
+    upload_to_testflight
+  end
+
+  desc "New build"
+  lane :build do |options|
+    #buildNumber = latest_testflight_build_number
+    #incrementBuildNumber(buildNumber)
+    #sh("env")
+    get_certificates           # invokes cert
+    get_provisioning_profile   # invokes sigh
+    cocoapods(
+        podfile: "./Podfile",
+        use_bundle_exec: false
+    )
+    build_ios_app(
+        output_directory: "./output",
+        derived_data_path: "./derived_data",
+        archive_path: "./archive",
+        build_path: "./build",
+        export_method: "app-store",
+        configuration: "Release",
+    )
+  end
+
+  desc "Push a new beta build to TestFlight"
+    lane :upload do
+      upload_to_testflight(
+        ipa: "output/Runner.ipa",
+        #skip_waiting_for_build_processing: true,
+        distribute_external: true,
+        groups: "External Testers",
+        changelog: "Added connection and communication logs to home page and otas dialog.",
+        notify_external_testers: true
+      )
+    end
+
+  def incrementBuildNumber(val)
+    increment_build_number({
+        build_number: val + 1
+    })
+  end
+
+  def incrementVersion(versionType)
+    if versionType != "build"
+        increment_version_number(bump_type: versionType)
+    end
+  end
+end

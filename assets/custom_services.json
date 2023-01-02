@@ -1,0 +1,4 @@
+[
+    { "name": "WDX Service", "identifier": "custom", "uuid": "FEF6", "source": "ADI" },
+    { "name": "ARM Propietary Data Service", "identifier": "custom", "uuid": "2760", "source": "ARM" }
+]
