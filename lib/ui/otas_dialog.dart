@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:math';
 import 'package:adi_attach/ble/ble_connect_device.dart';
 import 'package:adi_attach/ble/ble_device_manager.dart';
 import 'package:adi_attach/ble/ble_scanner.dart';
@@ -419,7 +420,10 @@ class _OTASDialogState extends State<OTASDialog> {
       for (int i = 0; i < loopCount; i++) {
         if (mounted) {
           if (_connectionState == DeviceConnectionState.connected) {
-            await writeChar(bytes, i, packetSize).timeout(
+            int startAddr = i*packetSize;
+            int endAddr = min(startAddr + packetSize, bytes.length);
+
+            await writeChar(startAddr, bytes.sublist(startAddr, endAddr)).timeout(
               const Duration(seconds: 10),
               onTimeout: () {
                 SimpleLogger().fine('Timeout while write operation');
@@ -445,7 +449,16 @@ class _OTASDialogState extends State<OTASDialog> {
     return _waitResponse(5000);
   }
 
-  Future<void> writeChar(Uint8List bytes, int i, int packetSize) async {
+  Future<void> writeChar(int addr, Uint8List bytes) async {
+    List<int> packet = [];
+    // add address, little endian
+    packet.add((addr>>0) & 0xff);
+    packet.add((addr>>8) & 0xff);
+    packet.add((addr>>16) & 0xff);
+    packet.add((addr>>24) & 0xff);
+    // add data
+    packet.addAll(bytes);
+    
     await Provider.of<BleDeviceManager>(context, listen: false)
         .writeCharacteristicWithoutResponse(
       _discoverServices()
@@ -460,8 +473,7 @@ class _OTASDialogState extends State<OTASDialog> {
               GATT.getCharacteristicName(element) ==
               'WDX File Transfer Data Characteristic'),
       widget.device,
-      bytes.sublist(i * packetSize,
-          (i + 1) * packetSize < bytes.length ? (i + 1) * packetSize : null),
+      packet,
       silent: true,
     );
   }
