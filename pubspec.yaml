@@ -143,6 +143,7 @@ flutter:
     - bluetooth-numbers-database/v1/service_uuids.json
     - assets/custom_services.json
     - assets/custom_characteristics.json
+    - assets/license.txt
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
