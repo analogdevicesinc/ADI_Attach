@@ -9,6 +9,11 @@ class LogState extends ChangeNotifier {
     notifyListeners();
   }
 
+  void clearLog() {
+    _appLog = '';
+    notifyListeners();
+  }
+
   String get appLog => _appLog;
 }
 
