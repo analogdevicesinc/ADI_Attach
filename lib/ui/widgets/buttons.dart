@@ -1,7 +1,7 @@
 import 'package:adi_attach/ble/ble_connect_device.dart';
 import 'package:adi_attach/ble/ble_scanner.dart';
 import 'package:adi_attach/ui/device_detail.dart';
-import 'package:cross_platform_ui_elements/cross_platform_ui_elements.dart';
+import 'package:adi_attach/cross_platform_ui_elements/cross_platform_ui_elements.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

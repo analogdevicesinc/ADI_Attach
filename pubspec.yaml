@@ -36,6 +36,9 @@ dependencies:
   # App Onboarding
   showcaseview: ^1.1.8
 
+  # Windows themed widgets
+  fluent_ui: ^4.0.0
+  
   # Parse uuids
   json_schema2: ^2.0.2+11
 
@@ -72,10 +75,6 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  
-  cross_platform_ui_elements:
-    git:
-      url: https://github.com/khanliKU/cross_platform_ui_elements.git
 
   # pick program files
   file_picker: ^5.2.0+1

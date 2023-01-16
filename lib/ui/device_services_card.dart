@@ -1,7 +1,7 @@
 import 'package:adi_attach/ble/ble_scanner.dart';
 import 'package:adi_attach/global/gatt.dart';
 import 'package:adi_attach/ui/otas_dialog.dart';
-import 'package:cross_platform_ui_elements/cross_platform_ui_elements.dart';
+import 'package:adi_attach/cross_platform_ui_elements/cross_platform_ui_elements.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_reactive_ble/flutter_reactive_ble.dart';
 import 'characteristic_card.dart';

@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:adi_attach/ble/ble_scanner.dart';
 import 'package:adi_attach/ui/request_connection_priority.dart';
 import 'package:adi_attach/ui/request_mtu_size_dialog.dart';
-import 'package:cross_platform_ui_elements/cross_platform_ui_elements.dart';
+import 'package:adi_attach/cross_platform_ui_elements/cross_platform_ui_elements.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

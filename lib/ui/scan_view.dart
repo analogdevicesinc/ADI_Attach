@@ -4,7 +4,7 @@ import 'package:adi_attach/ui/app_stack_view.dart';
 import 'package:adi_attach/ui/details_tabs.dart/details_tab_popup_menu.dart';
 import 'package:adi_attach/ui/rssi_plot.dart';
 import 'package:adi_attach/ui/scan_filter.dart';
-import 'package:cross_platform_ui_elements/cross_platform_ui_elements.dart';
+import 'package:adi_attach/cross_platform_ui_elements/cross_platform_ui_elements.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:adi_attach/ble/ble_scanner.dart';

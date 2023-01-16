@@ -8,7 +8,7 @@ import 'package:adi_attach/global/crc32_wrapper.dart';
 import 'package:adi_attach/global/gatt.dart';
 import 'package:adi_attach/global/logger.dart';
 import 'package:adi_attach/ui/app_stack_view.dart';
-import 'package:cross_platform_ui_elements/cross_platform_ui_elements.dart';
+import 'package:adi_attach/cross_platform_ui_elements/cross_platform_ui_elements.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

@@ -78,15 +78,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.3.3+2"
-  cross_platform_ui_elements:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "5a1400ce90c960c3d10a21aaed9f6d6ba239e730"
-      url: "https://github.com/khanliKU/cross_platform_ui_elements.git"
-    source: git
-    version: "0.0.1"
   crypto:
     dependency: transitive
     description:
@@ -209,12 +200,12 @@ packages:
     source: git
     version: "0.55.1"
   fluent_ui:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: fluent_ui
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.0.3"
+    version: "4.1.4"
   flutter:
     dependency: "direct main"
     description: flutter
