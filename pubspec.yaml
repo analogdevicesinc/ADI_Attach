@@ -92,17 +92,20 @@ dependency_overrides:
 
   flutter_reactive_ble:
     git:
-      url: https://github.com/khanliKU/flutter_reactive_ble.git
+      url: https://github.com/Analog-Devices-MSDK/flutter_reactive_ble.git
+      ref: dev-ADI
       path: packages/flutter_reactive_ble
 
   reactive_ble_mobile:
     git:
-      url: https://github.com/khanliKU/flutter_reactive_ble.git
+      url: https://github.com/Analog-Devices-MSDK/flutter_reactive_ble.git
+      ref: dev-ADI
       path: packages/reactive_ble_mobile
 
   reactive_ble_platform_interface:
     git:
-      url: https://github.com/khanliKU/flutter_reactive_ble.git
+      url: https://github.com/Analog-Devices-MSDK/flutter_reactive_ble.git
+      ref: dev-ADI
       path: packages/reactive_ble_platform_interface
 
 dev_dependencies:
