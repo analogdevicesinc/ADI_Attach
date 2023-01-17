@@ -1,6 +1,6 @@
 import 'package:adi_attach/ble/ble_scanner.dart';
 import 'package:adi_attach/ui/scan_filter.dart';
-import 'package:cross_platform_ui_elements/cross_platform_ui_elements.dart';
+import 'package:adi_attach/cross_platform_ui_elements/cross_platform_ui_elements.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

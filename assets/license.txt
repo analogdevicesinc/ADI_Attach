@@ -2,7 +2,7 @@ Mobile App End User License Agreement
 
 PLEASE READ THIS MOBILE APP END-USER LICENSE AGREEMENT CAREFULLY BEFORE ACCESSING OR USING MAXIM'S MOBILE APPLICATION. 
 
-This Mobile App End User License Agreement (the "Agreement") is a binding agreement between you & any other entity on whose behalf you accept these terms ("End User" or "you") and Maxim Integrated Products, Inc, a Delaware corporation, located at 160 Rio Roles, San Jose, CA 95134 USA ("Maxim"). This Agreement governs your use of this MAX66250 NFC Reader application together with all related documentation, (the "App") on any supported mobile platform and device ("Mobile Device"). 
+This Mobile App End User License Agreement (the "Agreement") is a binding agreement between you & any other entity on whose behalf you accept these terms ("End User" or "you") and Maxim Integrated Products, Inc, a Delaware corporation, located at 160 Rio Roles, San Jose, CA 95134 USA ("Maxim"). This Agreement governs your use of this "ADI Attach" BLE utility application together with all related documentation, (the "App") on any supported mobile platform and device ("Mobile Device"). 
 
 BY INSTALLING AND USING THE APP, YOU (A) ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTAND THIS AGREEMENT; (B) REPRESENT AND WARRANT THAT YOU ARE OF LEGAL AGE TO ENTER INTO A BINDING AGREEMENT; (C) REPRESENT AND WARRANT THAT YOU HAVE THE RIGHT, AUTHORITY, AND CAPACITY TO ENTER INTO THIS AGREEMENT, AND (D) ACCEPT THIS AGREEMENT AND AGREE THAT YOU ARE LEGALLY BOUND BY ITS TERMS, JUST AS IF YOU HAD SIGNED IT. IF YOU DO NOT AGREE TO THESE TERMS, DO NOT INSTALL OR USE THE APP. 
 

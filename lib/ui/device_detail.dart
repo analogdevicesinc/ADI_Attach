@@ -4,7 +4,7 @@ import 'package:adi_attach/global/gatt.dart';
 import 'package:adi_attach/ui/app_stack_view.dart';
 import 'package:adi_attach/ui/bluetooth_tile.dart';
 import 'package:adi_attach/ui/rssi_plot.dart';
-import 'package:cross_platform_ui_elements/elements/text.dart';
+import 'package:adi_attach/cross_platform_ui_elements/elements/text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_reactive_ble/flutter_reactive_ble.dart';
 import 'package:provider/provider.dart';
