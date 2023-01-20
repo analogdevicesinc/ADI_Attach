@@ -65,7 +65,7 @@ jobs:
           mv build/app/outputs/apk/release/app-release.apk release/adi_attach_android_v${VERSION}.apk
         
       - name: Upload Android Release
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: adi_attach_android_v${{env.VERSION}}
           path: release/**
