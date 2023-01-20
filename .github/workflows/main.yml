@@ -1,0 +1,71 @@
+name: Android Release
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: Create Android Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+      - name: Set App Version
+        run: |
+          VERSION=$(awk '/version:/ {print $2}' pubspec.yaml | tr -d '\r')
+          VERSION="${VERSION}.${{github.run_number}}"
+          echo $VERSION
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+      - name: Download Android keystore
+        id: android_keystore
+        uses: timheuer/base64-to-file@v1.0.3
+        with:
+          fileName: upload-keystore.jks
+          encodedString: ${{ secrets.LMAXIM_SIGNING_KEY }}
+      - name: Create key.properties
+        run: |
+          echo "storeFile=${{ steps.android_keystore.outputs.filePath }}" > android/key.properties
+          echo "storePassword=${{ secrets.LMAXIM_KEY_STORE_PASSWORD }}" >> android/key.properties
+          echo "keyPassword=${{ secrets.LMAXIM_KEY_PASSWORD }}" >> android/key.properties
+          echo "keyAlias=${{ secrets.LMAXIM_KEY_ALIAS }}" >> android/key.properties
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: "11"
+          cache: gradle
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.3.9"
+          channel: 'stable'
+          cache: true
+
+      - name: Get dependencies
+        run: flutter pub get
+      
+      - name: Install LLVM and Clang
+        uses: KyleMayes/install-llvm-action@v1
+        with:
+          version: "10.0"
+
+      - name: Generate C to Dart files
+        run: dart run ffigen
+
+      - name: Start Android Release Build
+        run: flutter build apk --release
+
+      - name: Prepare Release
+        run: |
+          # Create release folder and add all related files here
+          mkdir release
+          mv build/app/outputs/apk/release/app-release.apk release/adi_attach_android_v${VERSION}.apk
+        
+      - name: Upload Android Release
+        uses: actions/upload-artifact@v3
+        with:
+          name: adi_attach_android_v${{env.VERSION}}
+          path: release/**
