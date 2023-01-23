@@ -38,31 +38,31 @@ App can do:
 Discovered devices are displayed with information(name, mac address,rssi, company name) on the screen while scanning.
 
 <p align="center">
-<img src="screenshots/iphone_5.8/2_scan.PNG"  width=40% height=40%>
+<img src="screenshots/IOS/iphone_5.8/2_scan.PNG"  width=40% height=40%>
 </p>
 
 When turn the phone sideways while scanning, the rssi graph of the discovered devices is displayed.
 
 <p align="center">
-<img src="screenshots/iphone_5.8/4_rssi.PNG"  width=75% height=75%>
+<img src="screenshots/IOS/iphone_5.8/4_rssi.PNG"  width=75% height=75%>
 </p>
 
 When connected to the device, the device's services and characteristics are listed. Under the services, service characteristics are listed with names and which properties it support.
 
 <p align="center">
-<img src="screenshots/iphone_5.8/7_connected.PNG"  width=40% height=40%>
+<img src="screenshots/IOS/iphone_5.8/7_connected.PNG"  width=40% height=40%>
 </p>
 
 Perform the operations of Characteristics by pressing the icons next to them. An example characteristic operation; value that receive after the Device Name characteristic is read is seen under the characteristic' information.
 
 <p align="center">
-<img src="screenshots/iphone_5.8/9_read.PNG"  width=40% height=40%>
+<img src="screenshots/IOS/iphone_5.8/9_read.PNG"  width=40% height=40%>
 
 With WDX Service, firmware can be sent to the device with a binary file. After selecting the file, pressing the load button starts the file sending process.
 
 </p>
 <p align="center">
-<img src="screenshots/iphone_5.8/11_load.PNG"  width=40% height=40%>
+<img src="screenshots/IOS/iphone_5.8/11_load.PNG"  width=40% height=40%>
 </p>
 
 
@@ -72,15 +72,37 @@ With WDX Service, firmware can be sent to the device with a binary file. After 
 Contributions to the ADI Attach are welcome.  See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
+
 **© Copyright (C) 2022 Analog Devices, Inc., All rights Reserved.**
 
-This software is protected by copyright laws of the United States and of foreign countries. This material may also be protected by patent laws and technology transfer regulations of the United States and of foreign countries. This software is furnished under a license agreement and/or a nondisclosure agreement and may only be used or reproduced in accordance with the terms of those agreements. Dissemination of this information to any party or parties not specified in the license agreement and/or nondisclosure agreement is expressly prohibited.
+This software is protected by copyright laws of the United States and 
+of foreign countries. This material may also be protected by patent laws 
+and technology transfer regulations of the United States and of foreign 
+countries. This software is furnished under a license agreement and/or a 
+nondisclosure agreement and may only be used or reproduced in accordance 
+with the terms of those agreements. Dissemination of this information to 
+any party or parties not specified in the license agreement and/or 
+nondisclosure agreement is expressly prohibited.
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included 
+in all copies or substantial portions of the Software.
 
-**THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL MAXIM INTEGRATED BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+IN NO EVENT SHALL MAXIM INTEGRATED BE LIABLE FOR ANY CLAIM, DAMAGES 
+OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR 
+OTHER DEALINGS IN THE SOFTWARE.
 
-Except as contained in this notice, the name of **Analog Devices, Inc.** shall not be used except as stated in the **Analog Devices, Inc. Branding Policy.**
+Except as contained in this notice, the name of Analog Devices, Inc. 
+shall not be used except as stated in the Analog Devices, Inc. 
+Branding Policy.
 
-The mere transfer of this software does not imply any licenses of trade secrets, proprietary technology, copyrights, patents, trademarks, mask work rights, or any other form of intellectual property whatsoever. **Analog Devices, Inc.** retains all
-ownership rights.
+The mere transfer of this software does not imply any licenses 
+of trade secrets, proprietary technology, copyrights, patents, 
+trademarks, mask work rights, or any other form of intellectual 
+property whatsoever. Analog Devices, Inc. retains all rights, 
+title and interest in the software.
+
+[Final Copyright](https://www.maximintegrated.com/en/aboutus/legal/copyrights/default-copyright.html "Final Copyright")
