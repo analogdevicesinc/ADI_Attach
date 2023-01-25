@@ -28,6 +28,7 @@ App can do:
 - Clone the [project](https://github.com/Analog-Devices-MSDK/ADI_Attach): `git clone --recurse-submodules https://github.com/Analog-Devices-MSDK/ADI_Attach.git`
 - Go to project folder: `cd ADI_Attach`
 - Run: `flutter pub get`
+- Run: `dart pub get`
 - Run: `dart run ffigen`
 - Run `flutter run`
 
@@ -73,7 +74,7 @@ Contributions to the ADI Attach are welcome.  See [CONTRIBUTING.md](CONTRIBUTING
 
 ## License
 
-**© Copyright (C) 2022 Analog Devices, Inc., All rights Reserved.**
+**© Copyright (C) 2023 Analog Devices, Inc., All rights Reserved.**
 
 This software is protected by copyright laws of the United States and 
 of foreign countries. This material may also be protected by patent laws 
