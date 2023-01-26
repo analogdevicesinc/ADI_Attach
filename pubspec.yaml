@@ -87,7 +87,7 @@ dependencies:
 dependency_overrides:
   fl_chart:
     git:
-      url: git@github.com:imaNNeo/fl_chart.git
+      url: https://github.com/imaNNeo/fl_chart
       ref: master
 
   flutter_reactive_ble:

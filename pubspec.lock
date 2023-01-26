@@ -196,7 +196,7 @@ packages:
       path: "."
       ref: master
       resolved-ref: "7633e97be02bac5232f16a33e978ce024caa10a2"
-      url: "git@github.com:imaNNeo/fl_chart.git"
+      url: "https://github.com/imaNNeo/fl_chart"
     source: git
     version: "0.55.2"
   fluent_ui:
