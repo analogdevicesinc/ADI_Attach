@@ -56,13 +56,13 @@ jobs:
         run: dart run ffigen
 
       - name: Start Android Release Build
-        run: flutter build apk --release
+        run: flutter build appbundle
 
       - name: Prepare Release
         run: |
           # Create release folder and add all related files here
           mkdir release
-          mv build/app/outputs/apk/release/app-release.apk release/adi_attach_android_v${VERSION}.apk
+          mv build/app/outputs/bundle/release/app-release.aab release/adi_attach_android_v${VERSION}.aab
         
       - name: Upload Android Release
         uses: actions/upload-artifact@v3
