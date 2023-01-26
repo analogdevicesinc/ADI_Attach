@@ -194,11 +194,11 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "36701547c8d86e3172e6c8c66912548f3556b68b"
-      resolved-ref: "36701547c8d86e3172e6c8c66912548f3556b68b"
-      url: "https://github.com/khanliKU/fl_chart.git"
+      ref: master
+      resolved-ref: "7633e97be02bac5232f16a33e978ce024caa10a2"
+      url: "https://github.com/imaNNeo/fl_chart"
     source: git
-    version: "0.55.1"
+    version: "0.55.2"
   fluent_ui:
     dependency: "direct main"
     description:

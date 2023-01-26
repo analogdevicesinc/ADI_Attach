@@ -43,7 +43,7 @@ dependencies:
   json_schema2: ^2.0.2+11
 
   # charts
-  fl_chart: ^0.55.1
+  fl_chart: ^0.55.2
 
   # Logging tool
   simple_logger: ^1.9.0
@@ -87,8 +87,8 @@ dependencies:
 dependency_overrides:
   fl_chart:
     git:
-      url: https://github.com/khanliKU/fl_chart.git
-      ref: 36701547c8d86e3172e6c8c66912548f3556b68b
+      url: https://github.com/imaNNeo/fl_chart
+      ref: master
 
   flutter_reactive_ble:
     git:
