@@ -44,9 +44,6 @@ jobs:
           channel: 'stable'
           cache: true
 
-      - name: Clear Flutter
-        run: flutter clean
-
       - name: Get dependencies
         run: flutter pub get
       
@@ -58,14 +55,18 @@ jobs:
       - name: Generate C to Dart files
         run: dart run ffigen
 
-      - name: Start Android Release Build
-        run: flutter build appbundle
+      - name: Start Android Appbundle Release Build
+        run: flutter build appbundle --release
+      
+      - name: Start Android APK Release Build
+        run: flutter build apk --release
 
       - name: Prepare Release
         run: |
           # Create release folder and add all related files here
           mkdir release
           mv build/app/outputs/bundle/release/app-release.aab release/adi_attach_android_v${VERSION}.aab
+          mv build/app/outputs/apk/release/app-release.apk release/adi_attach_android_v${VERSION}.apk
         
       - name: Upload Android Release
         uses: actions/upload-artifact@v3
