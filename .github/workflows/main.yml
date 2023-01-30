@@ -1,4 +1,4 @@
-name: Android Release
+name: CI
 
 on:
   pull_request:
@@ -73,3 +73,36 @@ jobs:
         with:
           name: adi_attach_android_v${{env.VERSION}}
           path: release/**
+
+  build_ios:
+    name: Build iOS
+    runs-on: macos-latest
+    env:
+      SHEME: Runner
+      BUILD_CONFIGURATION: Release
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.3.9"
+          channel: 'stable'
+          cache: true
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Install LLVM and Clang
+        uses: KyleMayes/install-llvm-action@v1
+        with:
+          version: "10.0"
+
+      - name: Generate C to Dart files
+        run: dart run ffigen
+
+      - name: Build Flutter
+        run: flutter build ios --release --no-codesign
