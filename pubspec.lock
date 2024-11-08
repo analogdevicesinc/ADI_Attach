@@ -248,9 +248,9 @@ packages:
     dependency: "direct main"
     description:
       path: "packages/flutter_reactive_ble"
-      ref: dev-ADI
-      resolved-ref: a28658ad29e22fb767b0214d156067227168c9d9
-      url: "https://github.com/Analog-Devices-MSDK/flutter_reactive_ble.git"
+      ref: dev-adi
+      resolved-ref: 9f244e0566931603e3e86d014507f9d9372fc555
+      url: "https://github.com/analogdevicesinc/flutter_reactive_ble.git"
     source: git
     version: "5.0.2"
   flutter_test:
@@ -582,18 +582,18 @@ packages:
     dependency: "direct overridden"
     description:
       path: "packages/reactive_ble_mobile"
-      ref: dev-ADI
-      resolved-ref: a28658ad29e22fb767b0214d156067227168c9d9
-      url: "https://github.com/Analog-Devices-MSDK/flutter_reactive_ble.git"
+      ref: dev-adi
+      resolved-ref: 9f244e0566931603e3e86d014507f9d9372fc555
+      url: "https://github.com/analogdevicesinc/flutter_reactive_ble.git"
     source: git
     version: "5.0.2"
   reactive_ble_platform_interface:
     dependency: "direct overridden"
     description:
       path: "packages/reactive_ble_platform_interface"
-      ref: dev-ADI
-      resolved-ref: a28658ad29e22fb767b0214d156067227168c9d9
-      url: "https://github.com/Analog-Devices-MSDK/flutter_reactive_ble.git"
+      ref: dev-adi
+      resolved-ref: 9f244e0566931603e3e86d014507f9d9372fc555
+      url: "https://github.com/analogdevicesinc/flutter_reactive_ble.git"
     source: git
     version: "5.0.2"
   recase:
